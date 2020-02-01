@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 1251075588}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,6 +598,7 @@ MonoBehaviour:
   thrustPower: 200
   sword: {fileID: 7792921430469896708, guid: 1ae0889bdc67cdf428aed5143c47dbad, type: 3}
   canMove: 0
+  canAttack: 0
 --- !u!95 &1251075588
 Animator:
   serializedVersion: 3
