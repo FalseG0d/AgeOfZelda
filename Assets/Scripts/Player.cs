@@ -12,18 +12,23 @@ public class Player : MonoBehaviour
     public float thrustPower;
     public GameObject sword;
     public bool canMove;
+    SpriteRenderer sr;
+    public bool iniFrame;
     public bool canAttack;
+    float iniTimer=1f;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         maxhealth = 5;
+        iniFrame = false;
         canMove = true;
         canAttack = true;
         speed = 10;
         thrustPower = 400;
         currenthealth = maxhealth;
         gethealth();
+        sr = GetComponent<SpriteRenderer>();
         
     }
     void gethealth() {
@@ -52,7 +57,7 @@ public class Player : MonoBehaviour
         else
         {
             newSword.GetComponent<Attack>().special = false;
-            thrustPower = 250;
+            thrustPower = 350;
         }
         #region//SwordRotation
         int swordDir =anim.GetInteger("dir");
@@ -93,6 +98,24 @@ public class Player : MonoBehaviour
         if (currenthealth>maxhealth)
         {
             currenthealth=maxhealth;
+        }
+        if (iniFrame) {
+            iniTimer -= Time.deltaTime;
+            int rn = Random.Range(0,100);
+            if (rn < 50)
+            {
+                sr.enabled = false;
+            }
+            else 
+            {
+                sr.enabled = true;
+            }
+            if (iniTimer <= 0)
+            {
+                iniTimer = 1f;
+                sr.enabled = true;
+                iniFrame = false;
+            }
         }
         gethealth();
     }

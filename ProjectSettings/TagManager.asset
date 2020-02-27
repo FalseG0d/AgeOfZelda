@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sword
+  - Crab
+  - Dragon
+  - EnemyProjectile
+  - Wall
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

@@ -18,6 +18,8 @@ public class SwordParticle : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0) {
             Destroy(gameObject);
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().canAttack = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetInteger("attackDir", 5);
         }
         
     }

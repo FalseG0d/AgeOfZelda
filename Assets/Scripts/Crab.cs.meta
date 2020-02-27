@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d3574266beb002e419efc92e92970945
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - swordParticle: {fileID: 122067925492830277, guid: 27e96bc21a6f7044e841ee1275924f23,
+      type: 3}
+  - faceUp: {instanceID: 0}
+  - faceDown: {instanceID: 0}
+  - faceLeft: {instanceID: 0}
+  - faceRight: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
