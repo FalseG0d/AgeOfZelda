@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         GameObject newSword = Instantiate(sword,transform.position,sword.transform.rotation);
         if (currenthealth == maxhealth) {
             newSword.GetComponent<Attack>().special = true;
-            canMove = true;
+            
             thrustPower = 700;
         }
         else
@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
             newSword.GetComponent<Attack>().special = false;
             thrustPower = 350;
         }
+        canMove = true;
         #region//SwordRotation
         int swordDir =anim.GetInteger("dir");
         if (swordDir == 0) {
