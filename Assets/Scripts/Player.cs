@@ -145,4 +145,14 @@ public class Player : MonoBehaviour
         }
 
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "potion")
+        {
+            currenthealth=maxhealth;
+            Destroy(col.gameObject());
+
+        }
+    }
+
 }
