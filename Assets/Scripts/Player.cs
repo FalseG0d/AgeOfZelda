@@ -145,7 +145,7 @@ public class Player : MonoBehaviour
         }
 
     }
-    void OnCollisionEnter2D(Collision2D col)
+    /*void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "potion")
         {
@@ -153,6 +153,6 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject());
 
         }
-    }
+    }*/
 
 }
