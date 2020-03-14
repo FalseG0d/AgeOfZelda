@@ -10,6 +10,8 @@ TagManager:
   - EnemyProjectile
   - Wall
   - EnemyBullet
+  - potion
+  - Fence
   layers:
   - Default
   - TransparentFX
